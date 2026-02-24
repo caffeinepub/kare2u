@@ -1,0 +1,25 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-frontend-productcatalog-and-productcard-components-to-display-the-new-exact-product-data-fetched-from-the-backend-the-for-babies-tab-must-show-the-4-baby-products-cloudsoft-baby-shampoo-cloudsoft-baby-conditioner-purecuddle-baby-body-wash-purecuddle-baby-lotion-with-their-full-descriptions-and-exact-prices-the-for-adults-tab-must-show-the-5-adult-products-calmcare-shampoo-calmcare-conditioner-soothesilk-body-wash-soothesilk-lotion-renewglow-serum-with-their-full-descriptions-and-exact-prices-each-productcard-must-display-the-product-name-the-full-description-text-the-exact-single-price-e-g-12-22-and-the-add-to-cart-button-update-the-emoji-fallback-icons-on-productcard-to-be-appropriate-for-each-product-type-e-g-for-body-wash-for-shampoo-for-lotion-for-serum-ensure-the-adult-tab-grid-accommodates-5-cards-gracefully-e-g-last-card-centered-or-full-width-on-the-last-row",
+      "featureTitle": "Update the frontend ProductCatalog and ProductCard components to display the new exact product data fetched from the backend. The 'For Babies' tab must show the 4 baby products (CloudSoft Baby Shampoo, CloudSoft Baby Conditioner, PureCuddle Baby Body Wash, PureCuddle Baby Lotion) with their full descriptions and exact prices. The 'For Adults' tab must show the 5 adult products (CalmCare Shampoo, CalmCare Conditioner, SootheSilk Body Wash, SootheSilk Lotion, RenewGlow Serum) with their full descriptions and exact prices. Each ProductCard must display: the product name, the full description text, the exact single price (e.g. '$12', '$22'), and the 'Add to Cart' button. Update the emoji fallback icons on ProductCard to be appropriate for each product type (e.g., 🧴 for body wash, 🫧 for shampoo, 🧴 for lotion, ✨ for serum). Ensure the adult tab grid accommodates 5 cards gracefully (e.g., last card centered or full-width on the last row).",
+      "files": [
+        "frontend/src/components/ProductCard.tsx",
+        "frontend/src/components/ProductCatalog.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

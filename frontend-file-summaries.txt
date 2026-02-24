@@ -1,0 +1,15 @@
+{
+  "frontend/src/index.css": "Global styles with Kare2U brand OKLCH color system (light blue, soft green, white, navy), Google Fonts import for Playfair Display and Nunito, and utility classes for brand colors and shadows.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with Kare2U brand color tokens, Playfair Display/Nunito font families, custom border radii, and soft shadow utilities.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for fetching all products from the backend using `getProducts()`, with a client-side filter helper for category-based queries.",
+  "frontend/src/components/LeafMotif.tsx": "Reusable decorative leaf SVG component with configurable color, size, opacity, and rotation for brand accents throughout the site.",
+  "frontend/src/components/Hero.tsx": "Full-width hero section with logo, tagline, CTA buttons, leaf motifs, and hero background image — updated `flex-shrink-0` to `shrink-0` for Tailwind v3 compatibility.",
+  "frontend/src/components/BrandValues.tsx": "Brand values bar with four icon+label tiles (Fragrance-Free, Dermatologist-Inspired, Natural Ingredients, Family-Safe) on a soft blue background strip.",
+  "frontend/src/components/ProductCard.tsx": "Individual product card displaying image (or emoji fallback), type label, full description, exact price badge (converted from bigint), and a non-functional Add to Cart button. Now includes `serum` in all type maps and removes the old `PriceRange` dependency.",
+  "frontend/src/components/ProductCatalog.tsx": "Tabbed product catalog section with For Babies (4 products) and For Adults (5 products) tabs, using a responsive grid (`lg:grid-cols-3 xl:grid-cols-4`) that gracefully handles an odd number of cards without layout breakage.",
+  "frontend/src/components/WhyKare2U.tsx": "Three-column feature section highlighting Eczema-Focused Formula, Clean Ingredients, and For Every Stage of Life with icons and descriptive text.",
+  "frontend/src/components/BrandStory.tsx": "Two-column brand story section with origin narrative, brand illustration, floating accent cards using `hidden md:flex` (fixing the contradicting `flex hidden` lint errors), and key stats.",
+  "frontend/src/components/Header.tsx": "Fixed responsive header with logo, desktop navigation links, Shop Now CTA, and mobile hamburger menu with smooth scroll navigation.",
+  "frontend/src/components/Footer.tsx": "Dark navy footer with brand logo, tagline, navigation links, product links, social media icon placeholders, copyright, and caffeine.ai attribution.",
+  "frontend/src/App.tsx": "Main app component composing all page sections (Header, Hero, BrandValues, ProductCatalog, WhyKare2U, BrandStory, Footer) with smooth scroll navigation handlers."
+}

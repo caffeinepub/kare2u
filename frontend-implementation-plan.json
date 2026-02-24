@@ -1,0 +1,31 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update product catalog with exact product names, descriptions, and prices",
+  "requirements": [
+    {
+      "id": "REQ-10",
+      "summary": "Update frontend ProductCatalog and ProductCard components to display the new exact product data with full descriptions, exact prices, and appropriate emoji fallbacks for all 9 products including the new serum type",
+      "acceptanceCriteria": [
+        "'For Babies' tab displays exactly 4 product cards with correct names, full descriptions, and prices.",
+        "'For Adults' tab displays exactly 5 product cards including RenewGlow Serum at $22.",
+        "Each card shows the exact single price (not a range) matching the backend data.",
+        "Full product description text is rendered on each card.",
+        "The serum product card renders correctly in the adult grid without layout breakage.",
+        "Emoji fallback icons are contextually appropriate per product type."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ProductCard.tsx",
+          "operation": "modify",
+          "description": "Update the ProductCard component to handle the new serum product type and improve emoji fallback icons to be contextually appropriate for each product type. Map product types to emojis: shampoo → 🫧, conditioner → 🧴, bodyWash → 🧴, lotion → 🧴, serum → ✨. Ensure the full product description is rendered without truncation. Update the price display logic to show exact single prices formatted as currency strings (e.g., '$12', '$22') by converting the backend bigint price to dollars. Verify that the card layout accommodates longer descriptions gracefully."
+        },
+        {
+          "path": "frontend/src/components/ProductCatalog.tsx",
+          "operation": "modify",
+          "description": "Update the ProductCatalog component to ensure the product grid layout gracefully accommodates 5 cards in the adult tab (e.g., by centering the last card or allowing it to span appropriately on the last row). Verify that the tab switching logic correctly filters products by category ('baby' returns 4 products, 'adult' returns 5 products). Ensure the grid uses responsive classes that prevent layout breakage when displaying an odd number of cards. Confirm that all 9 products from the backend are properly rendered with their exact names, full descriptions, and exact prices."
+        }
+      ]
+    }
+  ]
+}

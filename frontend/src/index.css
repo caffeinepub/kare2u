@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 1rem;
+
+    /* Kare2U Brand Colors */
+    --brand-blue-light: 0.84 0.065 220;
+    --brand-blue: 0.72 0.09 220;
+    --brand-blue-dark: 0.55 0.1 220;
+    --brand-green-light: 0.88 0.055 150;
+    --brand-green: 0.74 0.09 150;
+    --brand-green-dark: 0.55 0.1 150;
+    --brand-navy: 0.28 0.05 230;
+    --brand-navy-deep: 0.2 0.04 230;
+
+    /* Semantic tokens */
+    --background: 0.99 0 0;
+    --foreground: 0.22 0.02 230;
+    --card: 1 0 0;
+    --card-foreground: 0.22 0.02 230;
+    --popover: 1 0 0;
+    --popover-foreground: 0.22 0.02 230;
+    --primary: 0.72 0.09 220;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.88 0.055 150;
+    --secondary-foreground: 0.28 0.05 230;
+    --muted: 0.95 0.02 220;
+    --muted-foreground: 0.5 0.03 230;
+    --accent: 0.84 0.065 220;
+    --accent-foreground: 0.28 0.05 230;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.9 0.03 220;
+    --input: 0.9 0.03 220;
+    --ring: 0.72 0.09 220;
+    --chart-1: 0.72 0.09 220;
+    --chart-2: 0.74 0.09 150;
+    --chart-3: 0.55 0.1 220;
+    --chart-4: 0.84 0.065 220;
+    --chart-5: 0.88 0.055 150;
+    --sidebar: 0.99 0 0;
+    --sidebar-foreground: 0.22 0.02 230;
+    --sidebar-primary: 0.72 0.09 220;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.84 0.065 220;
+    --sidebar-accent-foreground: 0.28 0.05 230;
+    --sidebar-border: 0.9 0.03 220;
+    --sidebar-ring: 0.72 0.09 220;
+  }
+
+  .dark {
+    --background: 0.18 0.03 230;
+    --foreground: 0.96 0.01 220;
+    --card: 0.22 0.03 230;
+    --card-foreground: 0.96 0.01 220;
+    --popover: 0.25 0.03 230;
+    --popover-foreground: 0.96 0.01 220;
+    --primary: 0.72 0.09 220;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.74 0.09 150;
+    --secondary-foreground: 0.96 0.01 220;
+    --muted: 0.28 0.03 230;
+    --muted-foreground: 0.65 0.03 220;
+    --accent: 0.84 0.065 220;
+    --accent-foreground: 0.22 0.02 230;
+    --destructive: 0.704 0.191 22.216;
+    --destructive-foreground: 0.985 0 0;
+    --border: 1 0 0 / 10%;
+    --input: 1 0 0 / 15%;
+    --ring: 0.72 0.09 220;
+    --sidebar: 0.22 0.03 230;
+    --sidebar-foreground: 0.96 0.01 220;
+    --sidebar-primary: 0.72 0.09 220;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.28 0.03 230;
+    --sidebar-accent-foreground: 0.96 0.01 220;
+    --sidebar-border: 1 0 0 / 10%;
+    --sidebar-ring: 0.72 0.09 220;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-body {
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .text-brand-blue {
+    color: oklch(var(--brand-blue));
+  }
+
+  .text-brand-green {
+    color: oklch(var(--brand-green));
+  }
+
+  .bg-brand-blue-light {
+    background-color: oklch(var(--brand-blue-light));
+  }
+
+  .bg-brand-green-light {
+    background-color: oklch(var(--brand-green-light));
+  }
+
+  .bg-brand-navy {
+    background-color: oklch(var(--brand-navy));
+  }
+
+  .bg-brand-navy-deep {
+    background-color: oklch(var(--brand-navy-deep));
+  }
+
+  .shadow-soft {
+    box-shadow: 0 4px 24px 0 oklch(0.72 0.09 220 / 0.12);
+  }
+
+  .shadow-card {
+    box-shadow: 0 2px 16px 0 oklch(0.72 0.09 220 / 0.08), 0 1px 4px 0 oklch(0.72 0.09 220 / 0.06);
+  }
+}
