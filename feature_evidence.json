@@ -2,11 +2,12 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-update-the-frontend-productcatalog-and-productcard-components-to-display-the-new-exact-product-data-fetched-from-the-backend-the-for-babies-tab-must-show-the-4-baby-products-cloudsoft-baby-shampoo-cloudsoft-baby-conditioner-purecuddle-baby-body-wash-purecuddle-baby-lotion-with-their-full-descriptions-and-exact-prices-the-for-adults-tab-must-show-the-5-adult-products-calmcare-shampoo-calmcare-conditioner-soothesilk-body-wash-soothesilk-lotion-renewglow-serum-with-their-full-descriptions-and-exact-prices-each-productcard-must-display-the-product-name-the-full-description-text-the-exact-single-price-e-g-12-22-and-the-add-to-cart-button-update-the-emoji-fallback-icons-on-productcard-to-be-appropriate-for-each-product-type-e-g-for-body-wash-for-shampoo-for-lotion-for-serum-ensure-the-adult-tab-grid-accommodates-5-cards-gracefully-e-g-last-card-centered-or-full-width-on-the-last-row",
-      "featureTitle": "Update the frontend ProductCatalog and ProductCard components to display the new exact product data fetched from the backend. The 'For Babies' tab must show the 4 baby products (CloudSoft Baby Shampoo, CloudSoft Baby Conditioner, PureCuddle Baby Body Wash, PureCuddle Baby Lotion) with their full descriptions and exact prices. The 'For Adults' tab must show the 5 adult products (CalmCare Shampoo, CalmCare Conditioner, SootheSilk Body Wash, SootheSilk Lotion, RenewGlow Serum) with their full descriptions and exact prices. Each ProductCard must display: the product name, the full description text, the exact single price (e.g. '$12', '$22'), and the 'Add to Cart' button. Update the emoji fallback icons on ProductCard to be appropriate for each product type (e.g., 🧴 for body wash, 🫧 for shampoo, 🧴 for lotion, ✨ for serum). Ensure the adult tab grid accommodates 5 cards gracefully (e.g., last card centered or full-width on the last row).",
+      "featureId": "feature-add-a-share-our-site-section-or-modal-accessible-from-the-site-e-g-a-button-in-the-header-or-footer-that-displays-a-generated-qr-code-image-pointing-to-the-kare2u-website-url-along-with-the-full-shareable-url-as-copyable-text-and-a-copy-link-button-that-copies-the-url-to-the-clipboard-style-it-using-the-kare2u-brand-palette-light-blue-soft-green-white-with-rounded-corners-and-a-clean-layout",
+      "featureTitle": "Add a 'Share Our Site' section or modal accessible from the site (e.g., a button in the Header or Footer) that displays a generated QR code image pointing to the Kare2U website URL, along with the full shareable URL as copyable text and a 'Copy Link' button that copies the URL to the clipboard. Style it using the Kare2U brand palette (light blue, soft green, white) with rounded corners and a clean layout.",
       "files": [
-        "frontend/src/components/ProductCard.tsx",
-        "frontend/src/components/ProductCatalog.tsx"
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/Header.tsx",
+        "frontend/src/components/ShareModal.tsx"
       ],
       "components": [
         "blob-storage@4.0.0",
@@ -17,7 +18,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-10"
+        "REQ-11"
       ],
       "confidence": "high"
     }

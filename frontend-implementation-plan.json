@@ -1,29 +1,38 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Update product catalog with exact product names, descriptions, and prices",
+  "title": "Add QR Code and Shareable Link for Kare2U Website",
   "requirements": [
     {
-      "id": "REQ-10",
-      "summary": "Update frontend ProductCatalog and ProductCard components to display the new exact product data with full descriptions, exact prices, and appropriate emoji fallbacks for all 9 products including the new serum type",
+      "id": "REQ-11",
+      "summary": "Add a 'Share Our Site' feature with QR code and copyable link accessible from the Header or Footer",
       "acceptanceCriteria": [
-        "'For Babies' tab displays exactly 4 product cards with correct names, full descriptions, and prices.",
-        "'For Adults' tab displays exactly 5 product cards including RenewGlow Serum at $22.",
-        "Each card shows the exact single price (not a range) matching the backend data.",
-        "Full product description text is rendered on each card.",
-        "The serum product card renders correctly in the adult grid without layout breakage.",
-        "Emoji fallback icons are contextually appropriate per product type."
+        "A QR code is displayed that encodes the Kare2U website URL",
+        "The shareable URL is shown as readable text beneath or beside the QR code",
+        "A 'Copy Link' button copies the URL to the clipboard when clicked",
+        "The QR code and link UI uses the Kare2U brand palette and rounded styling",
+        "The feature is accessible from the Header or Footer without breaking existing navigation"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/ProductCard.tsx",
+          "path": "frontend/package.json",
           "operation": "modify",
-          "description": "Update the ProductCard component to handle the new serum product type and improve emoji fallback icons to be contextually appropriate for each product type. Map product types to emojis: shampoo → 🫧, conditioner → 🧴, bodyWash → 🧴, lotion → 🧴, serum → ✨. Ensure the full product description is rendered without truncation. Update the price display logic to show exact single prices formatted as currency strings (e.g., '$12', '$22') by converting the backend bigint price to dollars. Verify that the card layout accommodates longer descriptions gracefully."
+          "description": "Add qrcode.react library to dependencies for client-side QR code generation"
         },
         {
-          "path": "frontend/src/components/ProductCatalog.tsx",
+          "path": "frontend/src/components/ShareModal.tsx",
+          "operation": "create",
+          "description": "Create a modal component that displays a QR code (generated using qrcode.react) encoding the Kare2U website URL, shows the full shareable URL as copyable text, and provides a 'Copy Link' button that copies the URL to clipboard. Style with Kare2U brand palette (light blue, soft green, white) using custom properties from index.css, rounded corners, and clean layout. Include close button and backdrop overlay."
+        },
+        {
+          "path": "frontend/src/components/Header.tsx",
           "operation": "modify",
-          "description": "Update the ProductCatalog component to ensure the product grid layout gracefully accommodates 5 cards in the adult tab (e.g., by centering the last card or allowing it to span appropriately on the last row). Verify that the tab switching logic correctly filters products by category ('baby' returns 4 products, 'adult' returns 5 products). Ensure the grid uses responsive classes that prevent layout breakage when displaying an odd number of cards. Confirm that all 9 products from the backend are properly rendered with their exact names, full descriptions, and exact prices."
+          "description": "Add a 'Share' button to the Header navigation (both desktop and mobile views) that opens the ShareModal component when clicked. Position appropriately within the existing navigation structure without breaking current layout. Import and wire the ShareModal component with open/close state management."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Add a 'Share Our Site' link or button to the Footer navigation links that opens the ShareModal component when clicked. Import and wire the ShareModal component with open/close state management, ensuring it integrates cleanly with the existing three-column footer layout."
         }
       ]
     }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 5,
+  "projectStateVersion": 7,
   "summary": "Kare2U is an eczema-focused skincare brand for babies and adults. Building a full product website featuring light blue/soft green/white color palette with leaf motifs, product catalog for baby and adult lines with specific named products and pricing (Baby: CloudSoft Shampoo $12, CloudSoft Conditioner $12, PureCuddle Body Wash $10, PureCuddle Lotion $14; Adult: CalmCare Shampoo $15, CalmCare Conditioner $15, SootheSilk Body Wash $14, SootheSilk Lotion $18, RenewGlow Serum $22), and brand story emphasizing transparency, natural ingredients, and family care.",
   "architectural_notes": [
     "Color palette: Light Blue (#A8D8EA), Soft Green (#B8D8B8), White (#FAFAFA) with pastel/mint accents",
@@ -83,6 +83,14 @@
         "REQ-10"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-add-a-share-our-site-section-or-modal-accessible-from-the-site-e-g-a-button-in-the-header-or-footer-that-displays-a-generated-qr-code-image-pointing-to-the-kare2u-website-url-along-with-the-full-shareable-url-as-copyable-text-and-a-copy-link-button-that-copies-the-url-to-the-clipboard-style-it-using-the-kare2u-brand-palette-light-blue-soft-green-white-with-rounded-corners-and-a-clean-layout",
+      "title": "Add a 'Share Our Site' section or modal accessible from the site (e.g., a button in the Header or Footer) that displays a generated QR code image pointing to the Kare2U website URL, along with the full shareable URL as copyable text and a 'Copy Link' button that copies the URL to the clipboard. Style it using the Kare2U brand palette (light blue, soft green, white) with rounded corners and a clean layout.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -134,6 +142,12 @@
       "reqIds": [
         "REQ-9"
       ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Generate a QR code and shareable link for the Kare2U website",
+      "reqIds": [],
       "status": "pending"
     }
   ],

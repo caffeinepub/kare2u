@@ -3,11 +3,11 @@ import Map "mo:core/Map";
 import Nat "mo:core/Nat";
 import Order "mo:core/Order";
 import Text "mo:core/Text";
-import Migration "migration";
+
 import MixinStorage "blob-storage/Mixin";
 
 // Apply migration on upgrades
-(with migration = Migration.run)
+
 actor {
   include MixinStorage();
 

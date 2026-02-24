@@ -9,7 +9,8 @@
   "frontend/src/components/ProductCatalog.tsx": "Tabbed product catalog section with For Babies (4 products) and For Adults (5 products) tabs, using a responsive grid (`lg:grid-cols-3 xl:grid-cols-4`) that gracefully handles an odd number of cards without layout breakage.",
   "frontend/src/components/WhyKare2U.tsx": "Three-column feature section highlighting Eczema-Focused Formula, Clean Ingredients, and For Every Stage of Life with icons and descriptive text.",
   "frontend/src/components/BrandStory.tsx": "Two-column brand story section with origin narrative, brand illustration, floating accent cards using `hidden md:flex` (fixing the contradicting `flex hidden` lint errors), and key stats.",
-  "frontend/src/components/Header.tsx": "Fixed responsive header with logo, desktop navigation links, Shop Now CTA, and mobile hamburger menu with smooth scroll navigation.",
-  "frontend/src/components/Footer.tsx": "Dark navy footer with brand logo, tagline, navigation links, product links, social media icon placeholders, copyright, and caffeine.ai attribution.",
-  "frontend/src/App.tsx": "Main app component composing all page sections (Header, Hero, BrandValues, ProductCatalog, WhyKare2U, BrandStory, Footer) with smooth scroll navigation handlers."
+  "frontend/src/components/Header.tsx": "Fixed responsive header with logo, desktop nav links, a new Share button (desktop + mobile) that opens the ShareModal, and a Shop Now CTA — mobile hamburger menu also includes the Share Our Site option.",
+  "frontend/src/components/Footer.tsx": "Dark navy footer with brand logo, tagline, navigation links (including a new Share Our Site link), product links, social icons, copyright, and caffeine.ai attribution — wires the ShareModal with open/close state.",
+  "frontend/src/App.tsx": "Main app component composing all page sections (Header, Hero, BrandValues, ProductCatalog, WhyKare2U, BrandStory, Footer) with smooth scroll navigation handlers.",
+  "frontend/src/components/ShareModal.tsx": "New modal component that displays a QR code (via Google Charts API) encoding the site URL, shows the full shareable URL as copyable text, and provides a Copy Link button with a copied confirmation state — styled with Kare2U brand palette and rounded corners using the shadcn Dialog."
 }

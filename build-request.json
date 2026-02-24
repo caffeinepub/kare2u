@@ -1,71 +1,39 @@
 {
   "kind": "build_request",
-  "title": "Update product catalog with exact product names, descriptions, and prices",
-  "projectName": "Kare2U",
+  "title": "Add QR Code and Shareable Link for Kare2U Website",
+  "projectName": "Kare2U Skincare",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-9",
-      "text": "Update the backend product catalog stable state to replace all existing products with the following exact data:\n\nBABY LINE:\n1. CloudSoft Baby Shampoo — category: baby, type: shampoo, price: $12. Description: 'A tear-free, calming shampoo that feels like a soft cloud on sensitive baby scalps. Made with aloe, chamomile, and glycerin, it gently cleanses without irritation, leaving hair fresh and fluffy. Perfect for eczema-prone newborns and toddlers.'\n2. CloudSoft Baby Conditioner — category: baby, type: conditioner, price: $12. Description: 'This silky, lightweight conditioner detangles baby hair without pulling or residue. Infused with calendula and coconut-derived softeners, it hydrates and smooths while protecting delicate scalps. Safe for daily use and fragrance-free.'\n3. PureCuddle Baby Body Wash — category: baby, type: body wash, price: $10. Description: 'A gentle, fragrance-free body wash designed to protect and soothe sensitive baby skin. With plant-based cleansers and calming botanicals, it cleans without stripping moisture — ideal for eczema, dryness, and daily bath time.'\n4. PureCuddle Baby Lotion — category: baby, type: lotion, price: $14. Description: 'A soothing daily lotion that locks in moisture and calms irritation. Made with shea butter, calendula, and vitamin E, it's perfect for babies with eczema or dry patches. Absorbs quickly and leaves skin soft, never greasy.'\n\nADULT LINE:\n5. CalmCare Shampoo — category: adult, type: shampoo, price: $15. Description: 'Designed for itchy, flaky, or irritated scalps, this gentle shampoo cleanses without harsh ingredients. With aloe, oat protein, and tea tree, it relieves discomfort while restoring balance to sensitive skin.'\n6. CalmCare Conditioner — category: adult, type: conditioner, price: $15. Description: 'Deep moisture without heaviness. This conditioner softens and detangles while calming the scalp with chamomile and coconut oil. Ideal for eczema-prone or easily irritated skin.'\n7. SootheSilk Body Wash — category: adult, type: body wash, price: $14. Description: 'A creamy, non-stripping body wash that calms flare-ups while cleansing. With oat extract and aloe, it leaves skin feeling silky and soothed — perfect for daily use on sensitive or reactive skin.'\n8. SootheSilk Lotion — category: adult, type: lotion, price: $18. Description: 'Rich hydration with a silky finish. This lotion blends shea butter, ceramides, and vitamin E to nourish dry, eczema-prone skin without clogging pores. Smooth, comforting, and long-lasting.'\n9. RenewGlow Serum — category: adult, type: serum, price: $22. Description: 'A lightweight serum that targets dryness, discoloration, and irritation. With niacinamide, hyaluronic acid, and aloe, it restores glow and resilience to sensitive skin. Fast-absorbing and perfect for layering.'\n\nExtend the backend ProductType variant to include a Serum type. Update the initialization/seeding logic so these exact 9 products are stored as stable state. Expose the existing getProducts query so all 9 are returned.",
-      "target": "backend",
-      "source": {
-        "messageIds": [
-          "msg-latest"
-        ],
-        "quotes": [
-          "CloudSoft Baby Shampoo — $12",
-          "CloudSoft Baby Conditioner — $12",
-          "PureCuddle Baby Body Wash — $10",
-          "PureCuddle Baby Lotion — $14",
-          "CalmCare Shampoo — $15",
-          "CalmCare Conditioner — $15",
-          "SootheSilk Body Wash — $14",
-          "SootheSilk Lotion — $18",
-          "RenewGlow Serum — $22"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Backend ProductType variant includes a Serum constructor.",
-        "All 9 products (4 baby + 5 adult) are seeded into stable state with exact names, descriptions, categories, types, and prices as specified.",
-        "getProducts query returns all 9 products.",
-        "getProductsByCategory('baby') returns exactly 4 products; getProductsByCategory('adult') returns exactly 5 products.",
-        "Price for each product exactly matches: CloudSoft Shampoo $12, CloudSoft Conditioner $12, PureCuddle Body Wash $10, PureCuddle Lotion $14, CalmCare Shampoo $15, CalmCare Conditioner $15, SootheSilk Body Wash $14, SootheSilk Lotion $18, RenewGlow Serum $22."
-      ]
-    },
-    {
-      "id": "REQ-10",
-      "text": "Update the frontend ProductCatalog and ProductCard components to display the new exact product data fetched from the backend. The 'For Babies' tab must show the 4 baby products (CloudSoft Baby Shampoo, CloudSoft Baby Conditioner, PureCuddle Baby Body Wash, PureCuddle Baby Lotion) with their full descriptions and exact prices. The 'For Adults' tab must show the 5 adult products (CalmCare Shampoo, CalmCare Conditioner, SootheSilk Body Wash, SootheSilk Lotion, RenewGlow Serum) with their full descriptions and exact prices. Each ProductCard must display: the product name, the full description text, the exact single price (e.g. '$12', '$22'), and the 'Add to Cart' button. Update the emoji fallback icons on ProductCard to be appropriate for each product type (e.g., 🧴 for body wash, 🫧 for shampoo, 🧴 for lotion, ✨ for serum). Ensure the adult tab grid accommodates 5 cards gracefully (e.g., last card centered or full-width on the last row).",
+      "id": "REQ-11",
+      "text": "Add a 'Share Our Site' section or modal accessible from the site (e.g., a button in the Header or Footer) that displays a generated QR code image pointing to the Kare2U website URL, along with the full shareable URL as copyable text and a 'Copy Link' button that copies the URL to the clipboard. Style it using the Kare2U brand palette (light blue, soft green, white) with rounded corners and a clean layout.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-latest"
+          "msg-8"
         ],
         "quotes": [
-          "BABY LINE (Gentle + Comforting)",
-          "ADULT LINE (Healing + Premium)",
-          "RenewGlow Serum — $22"
+          "make us a qr code and link"
         ]
       },
       "acceptanceCriteria": [
-        "'For Babies' tab displays exactly 4 product cards with correct names, full descriptions, and prices.",
-        "'For Adults' tab displays exactly 5 product cards including RenewGlow Serum at $22.",
-        "Each card shows the exact single price (not a range) matching the backend data.",
-        "Full product description text is rendered on each card.",
-        "The serum product card renders correctly in the adult grid without layout breakage.",
-        "Emoji fallback icons are contextually appropriate per product type."
+        "A QR code is displayed that encodes the Kare2U website URL",
+        "The shareable URL is shown as readable text beneath or beside the QR code",
+        "A 'Copy Link' button copies the URL to the clipboard when clicked",
+        "The QR code and link UI uses the Kare2U brand palette and rounded styling",
+        "The feature is accessible from the Header or Footer without breaking existing navigation"
       ]
     }
   ],
   "constraints": [
-    "Do not change the backend query function signatures — only extend the ProductType variant and update the seeded data.",
-    "Do not modify any files listed in frontend.immutablePaths.",
-    "Prices must be exact single values (e.g., $12), not ranges."
+    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui",
+    "QR code must be generated client-side on the frontend — no backend changes required",
+    "Use a frontend QR code library (e.g., qrcode.react) to generate the code dynamically"
   ],
   "nonGoals": [
-    "Adding Internet Identity / user authentication.",
-    "Making the 'Add to Cart' button functional.",
-    "Adding new page sections or modifying the Hero, BrandValues, WhyKare2U, BrandStory, or Footer components.",
-    "Adding product images — emoji fallbacks are sufficient."
+    "No backend changes for QR code or link generation",
+    "No analytics or link tracking",
+    "No custom short-URL service"
   ],
   "imageRequirements": {
     "required": [],
