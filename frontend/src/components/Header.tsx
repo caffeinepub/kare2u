@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Share2 } from 'lucide-react';
+import { Menu, X, Rocket } from 'lucide-react';
 import { LeafMotif } from './LeafMotif';
 import { ShareModal } from './ShareModal';
 
@@ -68,20 +68,20 @@ export function Header({ onScrollTo }: HeaderProps) {
             ))}
           </nav>
 
-          {/* CTA + Share */}
+          {/* CTA + Publish */}
           <div className="hidden md:flex items-center gap-3">
             <button
               onClick={() => setShareOpen(true)}
               className="flex items-center gap-1.5 px-4 py-2.5 rounded-full font-body font-semibold text-sm transition-all duration-200 hover:scale-105 active:scale-95"
               style={{
-                background: 'oklch(0.93 0.03 220)',
-                color: 'oklch(0.35 0.05 230)',
-                border: '1.5px solid oklch(0.85 0.05 220)',
+                background: 'oklch(0.22 0.04 230)',
+                color: 'white',
+                border: '1.5px solid oklch(0.32 0.04 230)',
               }}
-              aria-label="Share our site"
+              aria-label="Publish site"
             >
-              <Share2 size={14} />
-              Share
+              <Rocket size={14} />
+              Publish
             </button>
             <button
               onClick={() => handleNav('products')}
@@ -129,8 +129,8 @@ export function Header({ onScrollTo }: HeaderProps) {
                 className="flex items-center gap-2 px-4 py-3 rounded-xl font-body font-semibold text-sm transition-colors hover:bg-brand-blue-light/30"
                 style={{ color: 'oklch(0.35 0.05 230)' }}
               >
-                <Share2 size={15} />
-                Share Our Site
+                <Rocket size={15} />
+                Publish Site
               </button>
               <button
                 onClick={() => handleNav('products')}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { SiInstagram, SiFacebook, SiTiktok } from 'react-icons/si';
-import { Share2 } from 'lucide-react';
+import { Rocket } from 'lucide-react';
 import { LeafMotif } from './LeafMotif';
 import { ShareModal } from './ShareModal';
 
@@ -96,8 +96,8 @@ export function Footer({ onScrollTo }: FooterProps) {
                     className="flex items-center gap-1.5 font-body text-sm transition-colors hover:text-white"
                     style={{ color: 'oklch(0.72 0.09 220)' }}
                   >
-                    <Share2 size={13} />
-                    Share Our Site
+                    <Rocket size={13} />
+                    Publish Site
                   </button>
                 </li>
               </ul>

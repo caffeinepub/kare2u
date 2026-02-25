@@ -1,158 +1,22 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 7,
-  "summary": "Kare2U is an eczema-focused skincare brand for babies and adults. Building a full product website featuring light blue/soft green/white color palette with leaf motifs, product catalog for baby and adult lines with specific named products and pricing (Baby: CloudSoft Shampoo $12, CloudSoft Conditioner $12, PureCuddle Body Wash $10, PureCuddle Lotion $14; Adult: CalmCare Shampoo $15, CalmCare Conditioner $15, SootheSilk Body Wash $14, SootheSilk Lotion $18, RenewGlow Serum $22), and brand story emphasizing transparency, natural ingredients, and family care.",
-  "architectural_notes": [
-    "Color palette: Light Blue (#A8D8EA), Soft Green (#B8D8B8), White (#FAFAFA) with pastel/mint accents",
-    "Leaf and botanical SVG motifs used throughout as decorative accents",
-    "Product lines: Baby (shampoo, conditioner, body wash, lotion) and Adult (shampoo, conditioner, body wash, lotion)",
-    "Baby line brand names: CloudSoft (shampoo/conditioner), PureCuddle (body wash/lotion); Adult line brand names: CalmCare (shampoo/conditioner), SootheSilk (body wash/lotion), RenewGlow (serum)",
-    "Adult line includes a 5th product: RenewGlow Serum at $22 (not in original catalog)"
-  ],
+  "projectStateVersion": 3,
+  "summary": "New project",
+  "architectural_notes": [],
   "known_issues": [],
   "isFixRequest": false,
   "existing_features": [
     {
-      "id": "feature-apply-a-consistent-visual-theme-across-the-entire-site-using-kare2u-s-brand-palette-light-blue-a8d8ea-or-similar-soft-green-b8d8b8-or-similar-and-white-as-the-background-use-pastel-tones-throughout-leaf-motif-svg-accents-soft-rounded-corners-and-clean-sans-serif-typography-the-overall-feel-should-be-gentle-premium-and-family-friendly-suitable-for-sensitive-skin-care",
-      "title": "Apply a consistent visual theme across the entire site using Kare2U's brand palette: Light Blue (#A8D8EA or similar), Soft Green (#B8D8B8 or similar), and White as the background. Use pastel tones throughout, leaf motif SVG accents, soft rounded corners, and clean sans-serif typography. The overall feel should be gentle, premium, and family-friendly — suitable for sensitive skin care.",
+      "id": "feature-update-the-sharemodal-component-and-or-the-share-publish-button-in-the-header-and-footer-to-improve-its-appearance-copy-or-behavior-as-directed-by-the-user-clarify-with-the-user-what-specific-change-is-needed-e-g-button-label-modal-content-qr-code-url-link-copy-styling-and-apply-the-agreed-update-consistently-across-all-locations-where-the-share-publish-trigger-appears-header-and-footer",
+      "title": "Update the ShareModal component and/or the share/publish button in the Header and Footer to improve its appearance, copy, or behavior as directed by the user. Clarify with the user what specific change is needed (e.g., button label, modal content, QR code URL, link copy, styling), and apply the agreed update consistently across all locations where the share/publish trigger appears (Header and Footer).",
       "reqIds": [
         "REQ-1"
       ],
       "version": 1
-    },
-    {
-      "id": "feature-build-a-hero-section-at-the-top-of-the-homepage-with-a-full-width-banner-featuring-the-kare2u-logo-brand-name-the-tagline-because-your-skin-deserves-better-a-brief-one-line-supporting-text-about-eczema-focused-care-and-two-prominent-cta-buttons-shop-baby-and-shop-adult-the-hero-should-use-the-brand-s-light-blue-and-white-palette-with-a-leaf-motif-background-element",
-      "title": "Build a Hero section at the top of the homepage with a full-width banner featuring the Kare2U logo/brand name, the tagline 'Because your skin deserves better.', a brief one-line supporting text about eczema-focused care, and two prominent CTA buttons: 'Shop Baby' and 'Shop Adult'. The hero should use the brand's light blue and white palette with a leaf motif background element.",
-      "reqIds": [
-        "REQ-2"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-build-a-brand-values-bar-below-the-hero-with-four-icon-label-tiles-highlighting-key-product-attributes-fragrance-free-dermatologist-inspired-natural-ingredients-and-family-safe-each-tile-should-have-a-small-illustrative-icon-and-a-short-descriptor-line-use-a-soft-green-or-light-blue-background-strip-to-differentiate-this-section",
-      "title": "Build a Brand Values bar below the hero with four icon+label tiles highlighting key product attributes: 'Fragrance-Free', 'Dermatologist-Inspired', 'Natural Ingredients', and 'Family-Safe'. Each tile should have a small illustrative icon and a short descriptor line. Use a soft green or light blue background strip to differentiate this section.",
-      "reqIds": [
-        "REQ-3"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-build-a-product-catalog-section-with-two-tabs-for-babies-and-for-adults-each-tab-displays-a-grid-of-product-cards-baby-products-baby-shampoo-12-15-baby-conditioner-12-15-baby-body-wash-10-14-baby-lotion-14-18-adult-products-adult-shampoo-12-15-adult-conditioner-12-15-adult-body-wash-10-14-adult-lotion-14-18-each-card-shows-product-image-placeholder-product-name-a-short-1-2-sentence-description-emphasizing-eczema-safe-and-gentle-benefits-price-range-and-an-add-to-cart-button-non-functional-ui-element-for-now",
-      "title": "Build a Product Catalog section with two tabs — 'For Babies' and 'For Adults'. Each tab displays a grid of product cards. Baby products: Baby Shampoo ($12–$15), Baby Conditioner ($12–$15), Baby Body Wash ($10–$14), Baby Lotion ($14–$18). Adult products: Adult Shampoo ($12–$15), Adult Conditioner ($12–$15), Adult Body Wash ($10–$14), Adult Lotion ($14–$18). Each card shows: product image placeholder, product name, a short 1–2 sentence description emphasizing eczema-safe and gentle benefits, price range, and an 'Add to Cart' button (non-functional UI element for now).",
-      "reqIds": [
-        "REQ-4"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-build-a-why-kare2u-section-with-a-3-column-feature-layout-each-column-should-feature-an-icon-a-heading-and-2-3-sentences-of-supporting-text-the-three-features-should-be-1-eczema-focused-formula-developed-specifically-for-sensitive-and-eczema-prone-skin-2-clean-transparent-ingredients-no-hidden-chemicals-naturally-sourced-3-for-every-stage-of-life-gentle-enough-for-babies-effective-for-adults-use-soft-green-accent-colors-for-icons-or-headings",
-      "title": "Build a 'Why Kare2U?' section with a 3-column feature layout. Each column should feature an icon, a heading, and 2–3 sentences of supporting text. The three features should be: (1) Eczema-Focused Formula – developed specifically for sensitive and eczema-prone skin; (2) Clean & Transparent Ingredients – no hidden chemicals, naturally sourced; (3) For Every Stage of Life – gentle enough for babies, effective for adults. Use soft green accent colors for icons or headings.",
-      "reqIds": [
-        "REQ-5"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-build-a-brand-story-section-with-the-kare2u-mission-statement-and-a-brief-origin-narrative-2-3-paragraphs-describing-how-the-brand-was-born-from-real-experience-with-sensitive-skin-the-commitment-to-transparency-and-the-family-centered-philosophy-include-a-decorative-image-placeholder-on-one-side-image-text-two-column-layout-on-desktop-stacked-on-mobile-use-warm-reassuring-language-aligned-with-the-brand-voice",
-      "title": "Build a Brand Story section with the Kare2U mission statement and a brief origin narrative (2–3 paragraphs) describing how the brand was born from real experience with sensitive skin, the commitment to transparency, and the family-centered philosophy. Include a decorative image placeholder on one side (image + text two-column layout on desktop, stacked on mobile). Use warm, reassuring language aligned with the brand voice.",
-      "reqIds": [
-        "REQ-6"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-build-a-site-footer-with-the-kare2u-brand-name-and-tagline-because-your-skin-deserves-better-navigation-links-home-products-our-story-contact-social-media-placeholder-icon-links-instagram-facebook-tiktok-non-functional-and-a-copyright-line-use-a-dark-navy-or-deep-soft-green-background-to-contrast-with-the-main-site-palette",
-      "title": "Build a site Footer with: the Kare2U brand name and tagline ('Because your skin deserves better.'), navigation links (Home, Products, Our Story, Contact), social media placeholder icon links (Instagram, Facebook, TikTok — non-functional), and a copyright line. Use a dark navy or deep soft-green background to contrast with the main site palette.",
-      "reqIds": [
-        "REQ-7"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-store-the-product-catalog-data-product-name-category-baby-adult-type-shampoo-conditioner-body-wash-lotion-description-price-range-in-the-motoko-backend-as-stable-state-expose-a-query-function-to-retrieve-all-products-the-frontend-should-fetch-product-data-from-the-backend-canister-to-populate-the-product-catalog-section",
-      "title": "Store the product catalog data (product name, category [baby/adult], type [shampoo/conditioner/body wash/lotion], description, price range) in the Motoko backend as stable state. Expose a query function to retrieve all products. The frontend should fetch product data from the backend canister to populate the product catalog section.",
-      "reqIds": [
-        "REQ-8"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-update-the-frontend-productcatalog-and-productcard-components-to-display-the-new-exact-product-data-fetched-from-the-backend-the-for-babies-tab-must-show-the-4-baby-products-cloudsoft-baby-shampoo-cloudsoft-baby-conditioner-purecuddle-baby-body-wash-purecuddle-baby-lotion-with-their-full-descriptions-and-exact-prices-the-for-adults-tab-must-show-the-5-adult-products-calmcare-shampoo-calmcare-conditioner-soothesilk-body-wash-soothesilk-lotion-renewglow-serum-with-their-full-descriptions-and-exact-prices-each-productcard-must-display-the-product-name-the-full-description-text-the-exact-single-price-e-g-12-22-and-the-add-to-cart-button-update-the-emoji-fallback-icons-on-productcard-to-be-appropriate-for-each-product-type-e-g-for-body-wash-for-shampoo-for-lotion-for-serum-ensure-the-adult-tab-grid-accommodates-5-cards-gracefully-e-g-last-card-centered-or-full-width-on-the-last-row",
-      "title": "Update the frontend ProductCatalog and ProductCard components to display the new exact product data fetched from the backend. The 'For Babies' tab must show the 4 baby products (CloudSoft Baby Shampoo, CloudSoft Baby Conditioner, PureCuddle Baby Body Wash, PureCuddle Baby Lotion) with their full descriptions and exact prices. The 'For Adults' tab must show the 5 adult products (CalmCare Shampoo, CalmCare Conditioner, SootheSilk Body Wash, SootheSilk Lotion, RenewGlow Serum) with their full descriptions and exact prices. Each ProductCard must display: the product name, the full description text, the exact single price (e.g. '$12', '$22'), and the 'Add to Cart' button. Update the emoji fallback icons on ProductCard to be appropriate for each product type (e.g., 🧴 for body wash, 🫧 for shampoo, 🧴 for lotion, ✨ for serum). Ensure the adult tab grid accommodates 5 cards gracefully (e.g., last card centered or full-width on the last row).",
-      "reqIds": [
-        "REQ-10"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-add-a-share-our-site-section-or-modal-accessible-from-the-site-e-g-a-button-in-the-header-or-footer-that-displays-a-generated-qr-code-image-pointing-to-the-kare2u-website-url-along-with-the-full-shareable-url-as-copyable-text-and-a-copy-link-button-that-copies-the-url-to-the-clipboard-style-it-using-the-kare2u-brand-palette-light-blue-soft-green-white-with-rounded-corners-and-a-clean-layout",
-      "title": "Add a 'Share Our Site' section or modal accessible from the site (e.g., a button in the Header or Footer) that displays a generated QR code image pointing to the Kare2U website URL, along with the full shareable URL as copyable text and a 'Copy Link' button that copies the URL to the clipboard. Style it using the Kare2U brand palette (light blue, soft green, white) with rounded corners and a clean layout.",
-      "reqIds": [
-        "REQ-11"
-      ],
-      "version": 1
     }
   ],
-  "new_feature_requests": [
-    {
-      "id": "AR-1",
-      "summary": "Hero section with tagline and CTA buttons for baby/adult shop",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-2",
-      "summary": "Brand values bar with icons (fragrance-free, dermatologist-inspired, natural, family-safe)",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-3",
-      "summary": "Product catalog with tabbed baby/adult split, cards showing name, description, price, and add to cart",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-4",
-      "summary": "Why Kare2U section with 3-column feature layout",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-5",
-      "summary": "Brand story section with mission and origins",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-6",
-      "summary": "Footer with links, tagline, and social placeholders",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-7",
-      "summary": "Update product catalog with named products, descriptions, and exact prices: Baby line (CloudSoft Shampoo $12, CloudSoft Conditioner $12, PureCuddle Body Wash $10, PureCuddle Lotion $14) and Adult line (CalmCare Shampoo $15, CalmCare Conditioner $15, SootheSilk Body Wash $14, SootheSilk Lotion $18, RenewGlow Serum $22)",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-8",
-      "summary": "Update the backend product catalog stable state to replace all existing products with the following exact data:\n\nBABY LINE:\n1. CloudSoft Baby Shampoo — category: baby, type: shampoo, price: $12. Description: 'A tear-free, calming shampoo that feels like a soft cloud on sensitive baby scalps. Made with aloe, chamomile, and glycerin, it gently cleanses without irritation, leaving hair fresh and fluffy. Perfect for eczema-prone newborns and toddlers.'\n2. CloudSoft Baby Conditioner — category: baby, type: conditioner, price: $12. Description: 'This silky, lightweight conditioner detangles baby hair without pulling or residue. Infused with calendula and coconut-derived softeners, it hydrates and smooths while protecting delicate scalps. Safe for daily use and fragrance-free.'\n3. PureCuddle Baby Body Wash — category: baby, type: body wash, price: $10. Description: 'A gentle, fragrance-free body wash designed to protect and soothe sensitive baby skin. With plant-based cleansers and calming botanicals, it cleans without stripping moisture — ideal for eczema, dryness, and daily bath time.'\n4. PureCuddle Baby Lotion — category: baby, type: lotion, price: $14. Description: 'A soothing daily lotion that locks in moisture and calms irritation. Made with shea butter, calendula, and vitamin E, it's perfect for babies with eczema or dry patches. Absorbs quickly and leaves skin soft, never greasy.'\n\nADULT LINE:\n5. CalmCare Shampoo — category: adult, type: shampoo, price: $15. Description: 'Designed for itchy, flaky, or irritated scalps, this gentle shampoo cleanses without harsh ingredients. With aloe, oat protein, and tea tree, it relieves discomfort while restoring balance to sensitive skin.'\n6. CalmCare Conditioner — category: adult, type: conditioner, price: $15. Description: 'Deep moisture without heaviness. This conditioner softens and detangles while calming the scalp with chamomile and coconut oil. Ideal for eczema-prone or easily irritated skin.'\n7. SootheSilk Body Wash — category: adult, type: body wash, price: $14. Description: 'A creamy, non-stripping body wash that calms flare-ups while cleansing. With oat extract and aloe, it leaves skin feeling silky and soothed — perfect for daily use on sensitive or reactive skin.'\n8. SootheSilk Lotion — category: adult, type: lotion, price: $18. Description: 'Rich hydration with a silky finish. This lotion blends shea butter, ceramides, and vitamin E to nourish dry, eczema-prone skin without clogging pores. Smooth, comforting, and long-lasting.'\n9. RenewGlow Serum — category: adult, type: serum, price: $22. Description: 'A lightweight serum that targets dryness, discoloration, and irritation. With niacinamide, hyaluronic acid, and aloe, it restores glow and resilience to sensitive skin. Fast-absorbing and perfect for layering.'\n\nExtend the backend ProductType variant to include a Serum type. Update the initialization/seeding logic so these exact 9 products are stored as stable state. Expose the existing getProducts query so all 9 are returned.",
-      "reqIds": [
-        "REQ-9"
-      ],
-      "status": "pending"
-    },
-    {
-      "id": "AR-9",
-      "summary": "Generate a QR code and shareable link for the Kare2U website",
-      "reqIds": [],
-      "status": "pending"
-    }
-  ],
-  "gameProjectType": "none",
-  "projectName": "Kare2U",
+  "new_feature_requests": [],
+  "projectName": "Update the Share/Publish modal or button",
   "clarification_mode": "instant",
   "clarification_rounds": 0
 }

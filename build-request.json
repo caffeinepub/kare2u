@@ -1,39 +1,35 @@
 {
   "kind": "build_request",
-  "title": "Add QR Code and Shareable Link for Kare2U Website",
-  "projectName": "Kare2U Skincare",
+  "title": "Update the Share/Publish modal or button",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-11",
-      "text": "Add a 'Share Our Site' section or modal accessible from the site (e.g., a button in the Header or Footer) that displays a generated QR code image pointing to the Kare2U website URL, along with the full shareable URL as copyable text and a 'Copy Link' button that copies the URL to the clipboard. Style it using the Kare2U brand palette (light blue, soft green, white) with rounded corners and a clean layout.",
+      "id": "REQ-1",
+      "text": "Update the ShareModal component and/or the share/publish button in the Header and Footer to improve its appearance, copy, or behavior as directed by the user. Clarify with the user what specific change is needed (e.g., button label, modal content, QR code URL, link copy, styling), and apply the agreed update consistently across all locations where the share/publish trigger appears (Header and Footer).",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-8"
         ],
         "quotes": [
-          "make us a qr code and link"
+          "I need to change the publish thing"
         ]
       },
       "acceptanceCriteria": [
-        "A QR code is displayed that encodes the Kare2U website URL",
-        "The shareable URL is shown as readable text beneath or beside the QR code",
-        "A 'Copy Link' button copies the URL to the clipboard when clicked",
-        "The QR code and link UI uses the Kare2U brand palette and rounded styling",
-        "The feature is accessible from the Header or Footer without breaking existing navigation"
+        "The share/publish button and/or ShareModal reflect the requested change in both the Header and Footer components.",
+        "The ShareModal still opens correctly when the share button is clicked.",
+        "No regressions in QR code display or URL copy functionality."
       ]
     }
   ],
   "constraints": [
-    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui",
-    "QR code must be generated client-side on the frontend — no backend changes required",
-    "Use a frontend QR code library (e.g., qrcode.react) to generate the code dynamically"
+    "Do not modify files under frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, or frontend/src/components/ui.",
+    "Keep the ShareModal functional — QR code generation and clipboard copy must continue to work."
   ],
   "nonGoals": [
-    "No backend changes for QR code or link generation",
-    "No analytics or link tracking",
-    "No custom short-URL service"
+    "Changing backend product catalog or data models.",
+    "Adding new sharing platforms or social integrations.",
+    "Modifying any page sections unrelated to the share/publish feature."
   ],
   "imageRequirements": {
     "required": [],

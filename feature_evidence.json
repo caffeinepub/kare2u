@@ -2,8 +2,8 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-add-a-share-our-site-section-or-modal-accessible-from-the-site-e-g-a-button-in-the-header-or-footer-that-displays-a-generated-qr-code-image-pointing-to-the-kare2u-website-url-along-with-the-full-shareable-url-as-copyable-text-and-a-copy-link-button-that-copies-the-url-to-the-clipboard-style-it-using-the-kare2u-brand-palette-light-blue-soft-green-white-with-rounded-corners-and-a-clean-layout",
-      "featureTitle": "Add a 'Share Our Site' section or modal accessible from the site (e.g., a button in the Header or Footer) that displays a generated QR code image pointing to the Kare2U website URL, along with the full shareable URL as copyable text and a 'Copy Link' button that copies the URL to the clipboard. Style it using the Kare2U brand palette (light blue, soft green, white) with rounded corners and a clean layout.",
+      "featureId": "feature-update-the-sharemodal-component-and-or-the-share-publish-button-in-the-header-and-footer-to-improve-its-appearance-copy-or-behavior-as-directed-by-the-user-clarify-with-the-user-what-specific-change-is-needed-e-g-button-label-modal-content-qr-code-url-link-copy-styling-and-apply-the-agreed-update-consistently-across-all-locations-where-the-share-publish-trigger-appears-header-and-footer",
+      "featureTitle": "Update the ShareModal component and/or the share/publish button in the Header and Footer to improve its appearance, copy, or behavior as directed by the user. Clarify with the user what specific change is needed (e.g., button label, modal content, QR code URL, link copy, styling), and apply the agreed update consistently across all locations where the share/publish trigger appears (Header and Footer).",
       "files": [
         "frontend/src/components/Footer.tsx",
         "frontend/src/components/Header.tsx",
@@ -15,10 +15,12 @@
         "shadcn-ui@1.0.0",
         "build-template-react@1.0.0",
         "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
+        "github-export-icp-cli@1.0.0",
+        "qr-code@1.0.0",
+        "camera@1.0.0"
       ],
       "testIds": [
-        "REQ-11"
+        "REQ-1"
       ],
       "confidence": "high"
     }

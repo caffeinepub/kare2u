@@ -1,7 +1,7 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-24T23:45:51.819Z",
+  "generatedAt": "2026-02-25T00:03:23.187Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
@@ -11,11 +11,10 @@
     "implemented": 1,
     "items": [
       {
-        "id": "REQ-11",
-        "summary": "Add a 'Share Our Site' section or modal accessible from the site (e.g., a button in the Header or Footer) that displays a generated QR code image pointing to the Kare2U website URL, along with the full shareable URL as copyable text and a 'Copy Link' button that copies the URL to the clipboard. Style it using the Kare2U brand palette (light blue, soft green, white) with rounded corners and a clean layout.",
+        "id": "REQ-1",
+        "summary": "Update the ShareModal component and/or the share/publish button in the Header and Footer to improve its appearance, copy, or behavior as directed by the user. Clarify with the user what specific change is needed (e.g., button label, modal content, QR code URL, link copy, styling), and apply the agreed update consistently across all locations where the share/publish trigger appears (Header and Footer).",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/package.json",
           "frontend/src/components/ShareModal.tsx",
           "frontend/src/components/Header.tsx",
           "frontend/src/components/Footer.tsx"
@@ -30,12 +29,15 @@
   },
   "changedFiles": [
     "build-request.json",
+    "caffeine.lock.json",
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
+    "frontend/src/camera/useCamera.ts",
     "frontend/src/components/Footer.tsx",
     "frontend/src/components/Header.tsx",
     "frontend/src/components/ShareModal.tsx",
+    "frontend/src/qr-code/useQRScanner.ts",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

@@ -1,20 +1,11 @@
 {
   "kind": "spec_vs_diff_report",
   "version": "1.0",
-  "generatedAt": "2026-02-24T23:45:51.817Z",
-  "summary": "REQ-11 is largely implemented: a ShareModal component is created with a QR code (via Google Charts API), a copyable URL, and a Copy Link button. The modal is accessible from both the Header and Footer. However, the QR code is generated via an external Google Charts API rather than a client-side frontend library (e.g., qrcode.react), which violates the explicit constraint requiring client-side generation with a frontend QR code library.",
-  "missing_requirements": [
-    {
-      "id": "REQ-11",
-      "requirement": "QR code must be generated client-side on the frontend using a frontend QR code library (e.g., qrcode.react)",
-      "reason": "The ShareModal uses the Google Charts API (an external third-party service) to generate the QR code image via a URL fetch, not a client-side JavaScript library like qrcode.react. The build request explicitly states 'QR code must be generated client-side on the frontend' and 'Use a frontend QR code library (e.g., qrcode.react)'.",
-      "evidence": [
-        "frontend/src/components/ShareModal.tsx"
-      ]
-    }
-  ],
+  "generatedAt": "2026-02-25T00:03:23.184Z",
+  "summary": "The diff implements REQ-1 fully. The ShareModal has been rebranded with improved appearance and copy ('Your Site is Live!' header, Rocket icon, dark navy header strip, live URL display, QR code, Copy Link button, Done button). The Header now shows a 'Publish' button (with Rocket icon) and mobile menu shows 'Publish Site', both opening the ShareModal. The Footer navigation includes a 'Publish Site' link (with Rocket icon) also opening the ShareModal. QR code generation via Google Charts API and clipboard copy functionality are preserved. No files under the protected paths were modified.",
+  "missing_requirements": [],
   "hallucinated_features": [],
-  "confidence": 0.9,
+  "confidence": 0.97,
   "changed_files": [
     "frontend-file-summaries.txt",
     "frontend/src/components/Footer.tsx",
