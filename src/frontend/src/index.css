@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Ready Up Party Planning Brand Colors */
+    /* Page bg: off-white #F6F7F8 */
+    --background: 0.975 0.003 250;
+    /* Primary CTA: magenta/pink #E83E8C */
+    --primary: 0.57 0.235 358;
+    --primary-foreground: 1 0 0;
+    /* Secondary: teal #18A6A6 */
+    --secondary: 0.65 0.13 195;
+    --secondary-foreground: 1 0 0;
+    /* Card: white */
+    --card: 1 0 0;
+    --card-foreground: 0.15 0 0;
+    --popover: 1 0 0;
+    --popover-foreground: 0.15 0 0;
+    /* Text */
+    --foreground: 0.15 0 0;
+    /* Footer deep teal #0F4B55 */
+    --footer-bg: 0.35 0.07 205;
+    /* Muted */
+    --muted: 0.94 0.003 250;
+    --muted-foreground: 0.45 0.01 250;
+    /* Accent: teal */
+    --accent: 0.65 0.13 195;
+    --accent-foreground: 1 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.9 0.005 250;
+    --input: 0.9 0.005 250;
+    --ring: 0.57 0.235 358;
+    --chart-1: 0.57 0.235 358;
+    --chart-2: 0.65 0.13 195;
+    --chart-3: 0.35 0.07 205;
+    --chart-4: 0.75 0.15 60;
+    --chart-5: 0.7 0.18 130;
+    --sidebar: 1 0 0;
+    --sidebar-foreground: 0.15 0 0;
+    --sidebar-primary: 0.57 0.235 358;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.94 0.003 250;
+    --sidebar-accent-foreground: 0.15 0 0;
+    --sidebar-border: 0.9 0.005 250;
+    --sidebar-ring: 0.57 0.235 358;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .font-party {
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .bg-party-pink {
+    background-color: oklch(var(--primary));
+  }
+
+  .bg-party-teal {
+    background-color: oklch(var(--secondary));
+  }
+
+  .bg-party-footer {
+    background-color: oklch(var(--footer-bg));
+  }
+
+  .text-party-pink {
+    color: oklch(var(--primary));
+  }
+
+  .text-party-teal {
+    color: oklch(var(--secondary));
+  }
+
+  .shadow-card {
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08), 0 1px 4px 0
+      rgba(0, 0, 0, 0.05);
+  }
+
+  .shadow-hover {
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+  }
+}
